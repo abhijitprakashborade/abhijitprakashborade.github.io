@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e1320">
+  <title>Skills | Abhijit Borade</title>
+  <meta name="description" content="Abhijit Prakash Borade's technical skills — programming languages, web development, AI/ML, databases and tools.">
+  <meta name="author" content="Abhijit Prakash Borade">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233b82f6'/><text x='50' y='68' font-size='50' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>AB</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .skill-section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-bright);
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .skill-bar-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .skill-bar-label {
+      min-width: 160px;
+      font-size: 0.875rem;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .skill-bar-track {
+      flex: 1;
+      height: 6px;
+      background: var(--border);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .skill-bar-fill {
+      height: 100%;
+      border-radius: 99px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      width: 0;
+      transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .skill-bar-pct {
+      min-width: 36px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+  <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a class="nav-brand" href="index.html">
+        <span class="nav-brand__logo">AB</span>
+        <span>Abhijit Borade</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html" class="nav-active">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="nav-divider" aria-hidden="true"></li>
+        <li class="nav-social"><a href="https://www.linkedin.com/in/abhijit-borade-ab0b96265" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li class="nav-social"><a href="https://github.com/abhijitprakashborade" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-hero-badge"><i class="fas fa-layer-group"></i>&nbsp; Technical</div>
+      <h1 class="page-hero-title">Skills &amp; Technologies</h1>
+      <p class="page-hero-sub">My technical toolkit — from programming languages and frameworks to AI/ML tools and databases.</p>
+    </div>
+  </header>
+
+  <main id="content" role="main">
+
+    <!-- Skill Cards -->
+    <section class="section-wrap" aria-labelledby="tech-heading">
+      <div class="section-header">
+        <div class="section-icon"><i class="fas fa-code"></i></div>
+        <h2 class="section-title" id="tech-heading">Technology Stack</h2>
+        <div class="section-title-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-category"><i class="fas fa-brain" style="margin-right:0.4rem;"></i>AI / ML</div>
+          <div class="skill-tags">
+            <span class="skill-tag">RAG Systems</span>
+            <span class="skill-tag">LLM Integration</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Generative AI</span>
+            <span class="skill-tag">Embeddings</span>
+            <span class="skill-tag">Vector Databases</span>
+            <span class="skill-tag">OpenAI API (GPT-4o)</span>
+            <span class="skill-tag">Anthropic API</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category"><i class="fas fa-server" style="margin-right:0.4rem;"></i>Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category"><i class="fas fa-globe" style="margin-right:0.4rem;"></i>Web &amp; Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">MERN Stack</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category"><i class="fas fa-database" style="margin-right:0.4rem;"></i>Data &amp; Cloud</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Qdrant (Vector DB)</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category"><i class="fas fa-code-branch" style="margin-right:0.4rem;"></i>DevOps &amp; Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category"><i class="fas fa-microchip" style="margin-right:0.4rem;"></i>Core CS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Compiler Design</span>
+            <span class="skill-tag">Web Scraping</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Proficiency Bars -->
+    <section class="section-wrap" aria-labelledby="prof-heading">
+      <div class="section-header">
+        <div class="section-icon"><i class="fas fa-chart-bar"></i></div>
+        <h2 class="section-title" id="prof-heading">Proficiency</h2>
+        <div class="section-title-line"></div>
+      </div>
+      <div style="max-width: 640px;">
+
+        <div class="skill-section-title">Languages</div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">Python</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div>
+          <span class="skill-bar-pct">90%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">JavaScript</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+          <span class="skill-bar-pct">82%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">Java / C / C++</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="68"></div></div>
+          <span class="skill-bar-pct">68%</span>
+        </div>
+
+        <div class="skill-section-title">AI &amp; LLM Stack</div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">LangChain / RAG</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
+          <span class="skill-bar-pct">85%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">OpenAI / Anthropic API</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div>
+          <span class="skill-bar-pct">88%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">Prompt Engineering</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
+          <span class="skill-bar-pct">85%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">Pandas / NumPy</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+          <span class="skill-bar-pct">82%</span>
+        </div>
+
+        <div class="skill-section-title">Web &amp; Frameworks</div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">React.js</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+          <span class="skill-bar-pct">82%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">FastAPI / Node.js</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
+          <span class="skill-bar-pct">80%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">HTML / CSS</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div>
+          <span class="skill-bar-pct">90%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">Django / Next.js</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="72"></div></div>
+          <span class="skill-bar-pct">72%</span>
+        </div>
+
+        <div class="skill-section-title">Databases &amp; Tools</div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">MongoDB</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
+          <span class="skill-bar-pct">80%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">Qdrant (Vector DB)</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div>
+          <span class="skill-bar-pct">78%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">MySQL</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="72"></div></div>
+          <span class="skill-bar-pct">72%</span>
+        </div>
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">Git / GitHub / CI/CD</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
+          <span class="skill-bar-pct">85%</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>Designed &amp; Built by <a href="index.html">Abhijit Prakash Borade</a> &nbsp;·&nbsp; India</p>
+  </footer>
+
+  <script>
+    // Animate skill bars on scroll into view
+    const bars = document.querySelectorAll('.skill-bar-fill');
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.width = e.target.dataset.pct + '%';
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    bars.forEach(b => barObs.observe(b));
+
+    // Fade-up cards
+    const obs = new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in-view');obs.unobserve(x.target);}}),{threshold:0.1});
+    document.querySelectorAll('.skill-card').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(16px)';el.style.transition='opacity 0.5s ease,transform 0.5s ease';obs.observe(el);});
+    const s=document.createElement('style');s.textContent='.in-view{opacity:1!important;transform:none!important;}';document.head.appendChild(s);
+  </script>
+</body>
+</html>
