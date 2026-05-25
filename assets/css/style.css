@@ -820,8 +820,8 @@ ul { list-style: none; }
 /* ─── Contact Section ───────────────────────────────── */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
 }
 .contact-card {
   display: flex;
@@ -862,8 +862,8 @@ ul { list-style: none; }
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-bright);
-  overflow-wrap: break-word;
-  word-break: break-all;
+  overflow-wrap: anywhere;
+  word-break: normal;
   white-space: normal;
 }
 
@@ -979,12 +979,10 @@ ul { list-style: none; }
 
   .projects-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr 1fr; }
   .contact-card-value { font-size: 0.8rem; }
 }
 
 @media (max-width: 420px) {
-  .contact-grid { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; }
   .hero-resume-btn, .hero-contact-btn { width: 100%; justify-content: center; }
 }
