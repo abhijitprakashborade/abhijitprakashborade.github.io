@@ -964,11 +964,14 @@ ul { list-style: none; }
 
   .hero-section {
     grid-template-columns: 1fr;
-    padding: 3rem 1.25rem 2.5rem;
+    padding: 2rem 1.25rem 2rem;
     text-align: center;
+    gap: 1.5rem;
   }
-  .hero-section > *:last-child { order: -1; }
-  .hero-avatar { width: 150px; height: 150px; margin: 0 auto; }
+  .hero-content { order: 2; }
+  .hero-avatar-wrap { order: 1; }
+  .hero-avatar { width: 130px; height: 130px; margin: 0 auto; }
+  .hero-avatar-glow { display: none; }
   .hero-social { justify-content: center; }
   .hero-actions { justify-content: center; }
   .hero-tagline { margin-left: auto; margin-right: auto; }
