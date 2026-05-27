@@ -952,19 +952,20 @@ ul { list-style: none; }
     top: var(--nav-h);
     left: 0; right: 0;
     background: var(--bg-surface);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid transparent;
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
     gap: 0.25rem;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease, padding 0.35s ease;
+    transition: max-height 0.35s ease, padding 0.35s ease, border-color 0.35s ease;
     margin-left: 0;
   }
   .nav-toggle-checkbox:checked ~ .nav-links {
     max-height: 400px;
     padding: 1rem;
+    border-bottom-color: var(--border);
   }
   .nav-divider { display: none; }
   .nav-links li a { padding: 0.6rem 0.75rem; width: 100%; }
