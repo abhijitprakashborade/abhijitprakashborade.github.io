@@ -938,6 +938,13 @@ ul { list-style: none; }
 
 /* ─── Responsive ────────────────────────────────────── */
 @media (max-width: 768px) {
+  /* Disable animations on mobile — prevents blank dark page on load */
+  .fade-up, .fade-up-1, .fade-up-2, .fade-up-3, .fade-up-4, .fade-up-5 {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
   .nav-toggle-label { display: flex; }
 
   .nav-links {
